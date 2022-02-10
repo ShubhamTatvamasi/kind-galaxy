@@ -3,8 +3,8 @@
   command: kind get clusters
   register: kind_cluster_running
 
-- name: Create Kind Cluster
-  when: kind_cluster_running.stdout != "kind"
+- name: Create Kind Cluster on macOS
+  when: ( ansible_distribution == "MacOSX" ) and ( kind_cluster_running.stdout != "kind" )
   shell: |
     kind create cluster --config - << EOF
     kind: Cluster
