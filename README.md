@@ -1,3 +1,7 @@
-# Ansible Collection - shubhamtatvamasi.kind
+# Deploy Kind Cluster
 
-Documentation for the collection.
+Install dependant collections:
+```bash
+ansible-galaxy collection install -U shubhamtatvamasi.magma
+ansible-galaxy collection install -U shubhamtatvamasi.kind
+```

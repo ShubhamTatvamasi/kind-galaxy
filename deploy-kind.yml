@@ -1,10 +1,11 @@
 ---
 - name: Install Kind Cluster
   hosts: localhost
-  roles:
-    # For Production
-    # - role: shubhamtatvamasi.kind.create
+  vars:
+    orc8r_domain: "magma.local"
+    deploy_on_kind: true
 
-    # For Development
+  roles:
     - role: create
+    - role: shubhamtatvamasi.magma.metallb
     # - role: delete
