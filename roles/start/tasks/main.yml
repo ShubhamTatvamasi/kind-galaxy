@@ -1,0 +1,6 @@
+---
+- name: Create Kind Cluster
+  shell: echo "Hello World"
+  register: "output"
+
+- debug: var=output.stdout_lines

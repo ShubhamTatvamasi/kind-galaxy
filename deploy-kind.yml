@@ -1,0 +1,9 @@
+---
+- name: Install Kind Cluster
+  hosts: localhost
+  roles:
+    # For Production
+    # - role: shubhamtatvamasi.kind.start
+
+    # For Development
+    - role: start
