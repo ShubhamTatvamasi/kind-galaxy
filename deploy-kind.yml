@@ -3,7 +3,8 @@
   hosts: localhost
   roles:
     # For Production
-    # - role: shubhamtatvamasi.kind.start
+    # - role: shubhamtatvamasi.kind.create
 
     # For Development
-    - role: start
+    - role: create
+    - role: delete
