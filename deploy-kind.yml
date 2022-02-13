@@ -7,5 +7,12 @@
 
   roles:
     - role: create
+    - role: shubhamtatvamasi.magma.prerequisites
     - role: shubhamtatvamasi.magma.metallb
+    - role: shubhamtatvamasi.magma.postgresql
+    - role: shubhamtatvamasi.magma.orc8r
+    - role: shubhamtatvamasi.magma.haproxy
+    - role: shubhamtatvamasi.magma.elasticsearch
+    - role: shubhamtatvamasi.magma.fluentd
+    - role: shubhamtatvamasi.magma.dns
     # - role: delete
