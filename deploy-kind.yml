@@ -6,9 +6,9 @@
     deploy_on_kind: true
 
   roles:
+    - role: shubhamtatvamasi.magma.prerequisites
     - role: install
     - role: create
-    - role: shubhamtatvamasi.magma.prerequisites
     - role: shubhamtatvamasi.magma.metallb
     - role: shubhamtatvamasi.magma.postgresql
     - role: shubhamtatvamasi.magma.orc8r
