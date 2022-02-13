@@ -3,7 +3,7 @@
   command: kind get clusters
   register: kind_cluster_running
 
-- name: Create Kind Cluster on macOS
+- name: Create Kind Cluster
   when: not "orc8r" in kind_cluster_running.stdout
   shell: |
     kind create cluster --name orc8r --config - << EOF
