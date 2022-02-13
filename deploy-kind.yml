@@ -6,6 +6,7 @@
     deploy_on_kind: true
 
   roles:
+    - role: install
     - role: create
     - role: shubhamtatvamasi.magma.prerequisites
     - role: shubhamtatvamasi.magma.metallb
