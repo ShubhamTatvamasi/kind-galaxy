@@ -9,6 +9,7 @@
     - role: shubhamtatvamasi.magma.prerequisites
     - role: install
     - role: create
+    - role: load
     - role: shubhamtatvamasi.magma.metallb
     - role: shubhamtatvamasi.magma.postgresql
     - role: shubhamtatvamasi.magma.orc8r

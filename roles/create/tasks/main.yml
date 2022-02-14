@@ -6,7 +6,7 @@
 - name: Create Kind Cluster
   when: not "orc8r" in kind_cluster_running.stdout
   shell: |
-    kind create cluster --name orc8r --config - << EOF
+    kind create cluster --name {{ cluster_name }} --config - << EOF
     kind: Cluster
     apiVersion: kind.x-k8s.io/v1alpha4
     nodes:
