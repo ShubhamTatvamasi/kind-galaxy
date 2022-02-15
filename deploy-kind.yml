@@ -12,6 +12,7 @@
     - role: load
     - role: shubhamtatvamasi.magma.metallb
     - role: shubhamtatvamasi.magma.postgresql
+    - role: shubhamtatvamasi.magma.secrets
     - role: shubhamtatvamasi.magma.orc8r
     - role: shubhamtatvamasi.magma.haproxy
     - role: shubhamtatvamasi.magma.elasticsearch
