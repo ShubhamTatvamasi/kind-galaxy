@@ -24,9 +24,9 @@ kubectl -n orc8r exec -it ${NMS_POD} -- yarn setAdminPassword master admin admin
 Update these values in `/etc/hosts` file:
 ```
 127.0.0.1 api.magma.local
-127.0.0.1 master.nms.magma.local
-127.0.0.1 magma-test.nms.magma.local
 127.0.0.1 fluentd.magma.local
 127.0.0.1 controller.magma.local
+127.0.0.1 master.nms.magma.local
+127.0.0.1 magma-test.nms.magma.local
 127.0.0.1 bootstrapper-controller.magma.local
 ```
