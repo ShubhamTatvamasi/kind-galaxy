@@ -30,3 +30,5 @@ Update these values in `/etc/hosts` file:
 127.0.0.1 magma-test.nms.magma.local
 127.0.0.1 bootstrapper-controller.magma.local
 ```
+
+https://magma-test.nms.magma.local
