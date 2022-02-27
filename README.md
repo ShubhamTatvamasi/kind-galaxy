@@ -4,9 +4,10 @@
 
 Install the following tools:
 
-1. Docker 
+1. Docker
 2. Lens
 3. Homebrew (macOS)
+4. Ansible
 
 Set the following minimum resources in Docker Desktop on macOS:
 
