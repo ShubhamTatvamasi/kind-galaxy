@@ -24,7 +24,7 @@ Install dependant collections:
 ansible-galaxy collection install -U shubhamtatvamasi.kind
 ```
 
-Install Kind cluster
+Install Kind cluster:
 ```bash
 ansible-playbook deploy-kind.yml -K
 ```
@@ -50,5 +50,27 @@ Update these values in `/etc/hosts` file:
 127.0.0.1 bootstrapper-controller.magma.local
 ```
 
-https://magma-test.nms.magma.local \
+Open the NMS dashboard with the following URL:
+
+https://magma-test.nms.magma.local/
+
+You can find all the secrets at:
+```bash
+ls ~/magma-galaxy/secrets
+```
+
+You can add the `admin_operator.pfx` file to your browser with the following password:
+```
+password
+```
+
+Then access the Swagger API with the following URL:
+
 https://api.magma.local/swagger/v1/ui/
+
+### Uninstall Kind Cluster
+
+Delete Kind cluster:
+```bash
+kind delete cluster --name orc8r
+```
