@@ -45,6 +45,8 @@ kubectl -n orc8r exec -it ${NMS_POD} -- yarn setAdminPassword magma-test admin a
 kubectl -n orc8r exec -it ${NMS_POD} -- yarn setAdminPassword master admin admin
 ```
 
+### NMS Dashboard
+
 Update these values in `/etc/hosts` file:
 ```
 127.0.0.1 api.magma.local
@@ -58,6 +60,8 @@ Update these values in `/etc/hosts` file:
 Open the NMS dashboard with the following URL:
 
 https://magma-test.nms.magma.local/
+
+### Swagger API
 
 You can find all the secrets at:
 ```bash
