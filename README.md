@@ -4,10 +4,14 @@
 
 Install the following tools:
 
-1. Docker
-2. Lens
+1. Docker Desktop
+1. Lens
+
+Set the following minimum resources in Docker Desktop on macOS:
 
 ![](/images/docker.png)
+
+After Magma Orchestrator deployment the following resources will be in the use:
 
 ![](/images/lens.png)
 
