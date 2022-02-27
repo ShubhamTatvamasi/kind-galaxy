@@ -9,7 +9,7 @@ Install the following tools:
 3. Homebrew (macOS)
 4. Ansible
 
-Install Ansible and gnu-tar packages:
+Install **Ansible** and **gnu-tar** packages:
 ```bash
 brew install ansible gnu-tar
 ```
