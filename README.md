@@ -1,4 +1,17 @@
-# Deploy Kind Cluster
+# Kind Galaxy
+
+### Development Tools
+
+Install the following tools:
+
+1. Docker
+2. Lens
+
+![](/images/docker.png)
+
+![](/images/lens.png)
+
+### Deploy Kind Cluster
 
 Install dependant collections:
 ```bash
