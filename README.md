@@ -4,8 +4,9 @@
 
 Install the following tools:
 
-1. Docker Desktop
-1. Lens
+1. Docker 
+2. Lens
+3. Homebrew (macOS)
 
 Set the following minimum resources in Docker Desktop on macOS:
 
