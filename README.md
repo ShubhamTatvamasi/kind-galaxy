@@ -9,6 +9,11 @@ Install the following tools:
 3. Homebrew (macOS)
 4. Ansible
 
+Install Ansible and gnu-tar packages:
+```bash
+brew install ansible gnu-tar
+```
+
 Set the following minimum resources in Docker Desktop on macOS:
 
 ![](/images/docker.png)
@@ -24,12 +29,12 @@ Install dependant collections:
 ansible-galaxy collection install -U shubhamtatvamasi.kind
 ```
 
-Install Kind cluster:
+Install Magma Orchestrator on Kind cluster:
 ```bash
 ansible-playbook deploy-kind.yml -K
 ```
 
-Create new user:
+Create new user with ID `admin` and password `admin`:
 ```bash
 ORC_POD=$(kubectl -n orc8r get pod -l app.kubernetes.io/component=orchestrator -o jsonpath='{.items[0].metadata.name}')
 kubectl -n orc8r exec -it ${ORC_POD} -- envdir /var/opt/magma/envdir /var/opt/magma/bin/accessc \
@@ -59,7 +64,7 @@ You can find all the secrets at:
 ls ~/magma-galaxy/secrets
 ```
 
-You can add the `admin_operator.pfx` file to your browser with the following password:
+Upload `admin_operator.pfx` file to Keychain Acesss with the following password:
 ```
 password
 ```
@@ -68,9 +73,9 @@ Then access the Swagger API with the following URL:
 
 https://api.magma.local/swagger/v1/ui/
 
-### Uninstall Kind Cluster
+### Uninstall
 
-Delete Kind cluster:
+Delete Magma Orchestrator Kind cluster:
 ```bash
 kind delete cluster --name orc8r
 ```
