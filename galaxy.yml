@@ -33,7 +33,7 @@ tags:
 # L(specifiers,https://python-semanticversion.readthedocs.io/en/latest/#requirement-specification). Multiple version
 # range specifiers can be set and are separated by ','
 dependencies:
-  shubhamtatvamasi.magma: ">=0.1.52"
+  shubhamtatvamasi.magma: ">=0.1.53"
 # The URL of the originating SCM repository
 repository: https://github.com/ShubhamTatvamasi/kind-galaxy
 # The URL to any online docs
