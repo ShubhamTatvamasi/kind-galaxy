@@ -83,3 +83,21 @@ Delete Magma Orchestrator Kind cluster:
 ```bash
 kind delete cluster --name orc8r
 ```
+
+### FAQ
+
+Q. Got the following error on Ubuntu 20.04 LTS:
+
+```
+fatal: [localhost]: FAILED! => {"msg": "Could not find imported module support code for ansiblemodule. Looked for either AnsibleTurboModule.py or module.py"}
+```
+
+A. Install the latest version of Ansible:
+
+```bash
+sudo apt remove ansible
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+```
