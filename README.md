@@ -36,9 +36,10 @@ Install Magma Orchestrator on Kind cluster:
 ansible-playbook deploy-kind.yml -K
 ```
 
+Create new user with ID `admin` and password `admin`:
+
 > :warning: **Note:** Exectue the commands below one by one.
 
-Create new user with ID `admin` and password `admin`:
 ```bash
 ORC_POD=$(kubectl -n orc8r get pod -l app.kubernetes.io/component=orchestrator -o jsonpath='{.items[0].metadata.name}')
 kubectl -n orc8r exec -it ${ORC_POD} -- envdir /var/opt/magma/envdir /var/opt/magma/bin/accessc \
