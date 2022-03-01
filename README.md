@@ -29,12 +29,14 @@ Install dependant collections:
 ansible-galaxy collection install -U shubhamtatvamasi.kind
 ```
 
-> :warning: Make sure you don't have anything running on port **80** and **433** in your local machine.
+> :warning: **Note:** Make sure you don't have anything running on port **80** and **433** in your local machine.
 
 Install Magma Orchestrator on Kind cluster:
 ```bash
 ansible-playbook deploy-kind.yml -K
 ```
+
+> :warning: **Note:** Exectue the commands below one by one.
 
 Create new user with ID `admin` and password `admin`:
 ```bash
@@ -46,7 +48,6 @@ NMS_POD=$(kubectl -n orc8r get pod -l app.kubernetes.io/component=magmalte -o js
 kubectl -n orc8r exec -it ${NMS_POD} -- yarn setAdminPassword magma-test admin admin
 kubectl -n orc8r exec -it ${NMS_POD} -- yarn setAdminPassword master admin admin
 ```
-> :warning: Note: exectue the above commands one by one.
 
 ### NMS Dashboard
 
