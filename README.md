@@ -29,9 +29,10 @@ Install dependant collections:
 ansible-galaxy collection install -U shubhamtatvamasi.kind
 ```
 
+Install Magma Orchestrator on Kind cluster:
+
 > :warning: **Note:** Make sure you don't have anything running on port **80** and **433** in your local machine.
 
-Install Magma Orchestrator on Kind cluster:
 ```bash
 ansible-playbook deploy-kind.yml -K
 ```
