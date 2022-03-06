@@ -9,13 +9,15 @@
     - role: shubhamtatvamasi.magma.prerequisites
     - role: install
     - role: create
-    - role: load
+    # - role: load
     - role: shubhamtatvamasi.magma.metallb
+    # - role: shubhamtatvamasi.magma.nginx
     - role: shubhamtatvamasi.magma.postgresql
     - role: shubhamtatvamasi.magma.secrets
     - role: shubhamtatvamasi.magma.orc8r
     - role: shubhamtatvamasi.magma.haproxy
     - role: shubhamtatvamasi.magma.elasticsearch
     - role: shubhamtatvamasi.magma.fluentd
+    # - role: shubhamtatvamasi.magma.ingress
     - role: shubhamtatvamasi.magma.dns
     # - role: delete
