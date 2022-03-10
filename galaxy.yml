@@ -6,7 +6,7 @@ namespace: shubhamtatvamasi
 # The name of the collection. Has the same character restrictions as 'namespace'
 name: kind
 # The version of the collection. Must be compatible with semantic versioning
-version: 0.1.16
+version: 0.1.17
 # The path to the Markdown (.md) readme file. This path is relative to the root of the collection
 readme: README.md
 # A list of the collection's content authors. Can be just the name or in the format 'Full Name <email> (url)
@@ -33,7 +33,7 @@ tags:
 # L(specifiers,https://python-semanticversion.readthedocs.io/en/latest/#requirement-specification). Multiple version
 # range specifiers can be set and are separated by ','
 dependencies:
-  shubhamtatvamasi.magma: ">=0.1.57"
+  shubhamtatvamasi.magma: ">=0.1.58"
 # The URL of the originating SCM repository
 repository: https://github.com/ShubhamTatvamasi/kind-galaxy
 # The URL to any online docs
